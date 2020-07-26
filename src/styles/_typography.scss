@@ -1,0 +1,27 @@
+.heading {
+  &__primary {
+    font-size: 3rem;
+    font-weight: bold;
+  }
+
+  &__secondary {
+    font-size: 2rem;
+    color: darken(#D1D1D1, 20%);
+    font-weight: lighter;
+  }
+
+  &__tertiary {
+    font-size: 2rem;
+  }
+}
+
+.info {
+  &__primary {
+    font-size: 1.4rem;
+  }
+
+  &__secondary {
+    font-size: 1.3rem;
+    color: gray;
+  }
+}

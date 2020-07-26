@@ -24,14 +24,30 @@ function LeftPanel() {
   }, [dispatch]);
   
   return (
-    <section className="left__panel">
+    <section className="section__left">
       {profile ?
         <div className="profile">
-          <div className="profile__image"></div>
-          <div className="profile__description"></div>
-          <div className="profile__actions"></div>
-          <div className="profile__stats"></div>
-          <div className="profile__info"></div>
+          <div className="profile__image">
+            <img className="avatar" src={profile.avatar_url} alt="avatar" />
+          </div>
+          <div className="profile__description">
+            <div className="heading__primary">{profile.name}</div>
+            <div className="heading__secondary">{profile.login}</div>
+            <br/>
+            <div className="heading__tertiary">{profile.bio}</div>
+          </div>
+          <div className="profile__actions">
+            <div className="button button__secondary">Edit Profile</div>
+          </div>
+          <div className="profile__stats">
+            <div className="info__secondary">
+              <b>{profile.followers}</b>&nbsp;followers&nbsp;<sup>.</sup>&nbsp;<b>{profile.following}</b>&nbsp;following&nbsp;<sup>.</sup>
+            </div>
+          </div>
+          <div className="profile__info">
+            <div className="info__primary">{profile.company}</div>
+            <div className="info__primary">{profile.location}</div>
+          </div>
         </div>
         :
         null

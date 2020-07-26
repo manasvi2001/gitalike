@@ -26,7 +26,7 @@ function RightPanel() {
   }
 
   useEffect(() => {
-    dispatch(fetchRepos());
+    // dispatch(fetchRepos());
   }, [dispatch]);
 
   const isFiltersSet = () => {
@@ -42,7 +42,7 @@ function RightPanel() {
   }
 
   return (
-    <section className="right__panel">
+    <section className="section__right">
       <div className="search">
         <div className="search__bar"></div>
         <div className="search__filter"></div>

@@ -1,0 +1,21 @@
+.section {
+  &__left {
+    grid-column: 2 / 6;
+    align-self: center;
+
+    @media only screen and (max-width: 1024px) {
+      grid-column: 2 / 14;
+      grid-row: 1 / 2;
+    }
+  }
+
+  &__right {
+    grid-column: 6 / 14;
+    height: 100px;
+    background-color: blueviolet;
+    @media only screen and (max-width: 1024px) {
+      grid-column: 2 / 14;
+      grid-row: 2 / 3;
+    }
+  }
+}
